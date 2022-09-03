@@ -106,3 +106,19 @@ export const deleteSongById = async (id) => {
     return null;
   }
 };
+export const deleteAlbumById = async (id) => {
+  try {
+    const res = axios.delete(`${baseURL}api/albums/delete/${id}`);
+    return res;
+  } catch (error) {
+    return null;
+  }
+};
+export const deleteArtistById = async (id) => {
+  try {
+    const res = axios.delete(`${baseURL}api/artists/delete/${id}`);
+    return res;
+  } catch (error) {
+    return null;
+  }
+};

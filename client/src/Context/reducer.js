@@ -1,4 +1,3 @@
-
 export const actionType = {
   SET_USER: "SET_USER",
   SET_SEARCH_TERM: "SET_SEARCH_TERM",
