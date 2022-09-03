@@ -36,4 +36,4 @@ mongoose.connection
         console.log(`Error : ${error}`);
     });
 
-app.listen(4000, () => console.log("lisitening to port 4000"));
+app.listen(process.env.PORT||4000, () => console.log("lisitening to port 4000"));
